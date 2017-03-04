@@ -22,4 +22,7 @@ C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\obj\D
 C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\obj\Debug\Views\FlavourView.g.cs
 C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\obj\Debug\Controls\DialogEditFlavour.baml
 C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\obj\Debug\Views\FlavourView.baml
-C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\obj\Debug\Liquinator.csprojResolveAssemblyReference.cache
+C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\bin\Debug\RecipeDatabase.mdf
+C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\bin\Debug\RecipeDatabase_log.ldf
+C:\Users\mscib\documents\visual studio 2015\Projects\Liquinator\Liquinator\obj\Debug\Liquinator_Content.g.cs
+C:\Users\mscib\Documents\Visual Studio 2015\Projects\Liquinator\Liquinator\obj\Debug\Liquinator.csprojResolveAssemblyReference.cache

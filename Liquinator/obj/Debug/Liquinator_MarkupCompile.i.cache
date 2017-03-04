@@ -11,10 +11,16 @@ false
 DEBUG;TRACE
 C:\Users\mscib\Documents\Visual Studio 2015\Projects\Liquinator\Liquinator\App.xaml
 31498203414
+<<<<<<< HEAD
 
 19-1711518467
 15439989410
+=======
+21270834831
+28923145866
+16-638741391
+>>>>>>> Database-branch
 Controls\DialogEditFlavour.xaml;Views\FlavourView.xaml;Views\MainWindow.xaml;
 
-True
+False
 
