@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="Liquinator.Controls.DialogEditFlavour"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Liquinator.Controls"
+             xmlns:validationRules="clr-namespace:Liquinator.ValidationRules"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Margin="16">
+        <TextBlock>Edit flavour:</TextBlock>
+        <TextBox x:Name="NameEditField" materialDesign:HintAssist.Hint="Name" Width="140" Margin="8 0 8 14">
+            <TextBox.Text>
+                <Binding Path="SelectedFlavour.Name" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validationRules:NotEmptyValidationRule ValidatesOnTargetUpdated="True"></validationRules:NotEmptyValidationRule>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox x:Name="CompanyEditField" materialDesign:HintAssist.Hint="Company" Width="140" Margin="8 0 8 14">
+            <TextBox.Text>
+                <Binding Path="SelectedFlavour.Company" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validationRules:NotEmptyValidationRule ValidatesOnTargetUpdated="True"></validationRules:NotEmptyValidationRule>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox x:Name="ShopEditField" materialDesign:HintAssist.Hint="Shop" Width="140" Margin="8 0 8 14">
+            <TextBox.Text>
+                <Binding Path="SelectedFlavour.Shop" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validationRules:NotEmptyValidationRule ValidatesOnTargetUpdated="True"></validationRules:NotEmptyValidationRule>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox x:Name="AmountEditField" materialDesign:HintAssist.Hint="Amount" Width="140" Margin="8 0 8 14">
+            <TextBox.Text>
+                <Binding Path="SelectedFlavour.Amount" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validationRules:DoubleValidationRule ValidatesOnTargetUpdated="True"></validationRules:DoubleValidationRule>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <StackPanel Orientation="Horizontal">
+            <Button Style="{DynamicResource MaterialDesignRaisedAccentButton}" 
+                                        x:Name="AcceptButton"
+                                        FontSize="8"
+                                        Content="ACCEPT" Width="100" Height="30" 
+                                        Margin ="30 0 30 0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Command="{Binding CloseDialogCommand}"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
