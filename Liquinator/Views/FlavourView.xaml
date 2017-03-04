@@ -17,6 +17,7 @@
              TextOptions.TextRenderingMode="Auto"        
              Background="{DynamicResource MaterialDesignPaper}"
              FontFamily="FontFamily=pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+             DataContext="{DynamicResource FlavourViewModel}"
              d:DesignHeight="500" d:DesignWidth="500">
     <UserControl.Resources>
         <viewModels:FlavourViewModel x:Key="FlavourViewModel" />

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using Liquinator.DAO;
 using Liquinator.Models;
 using Liquinator.MVVM;
 
@@ -115,7 +116,6 @@ namespace Liquinator.ViewModels {
         #region Constructor
 
         public FlavourViewModel() {
-            Flavours = new ObservableCollection<Flavour>();
             IsEditButtonEnable = false;
             SelectedFlavour = null;
             Name = null;
@@ -152,9 +152,10 @@ namespace Liquinator.ViewModels {
         /// <summary>
         /// Fetch whole data from Flavour table
         /// </summary>
-        public void RefreshDataGrid() {
+        public void RefreshDataGrid(){
+            Flavours = new ObservableCollection<Flavour>(FlavourManager.GetFlavours());
+            Console.WriteLine("REFRESHDATAGRID");
         }
-
         /// <summary>
         /// Opening Edit Dialog. Set IsDialongOpen to True
         /// </summary>
